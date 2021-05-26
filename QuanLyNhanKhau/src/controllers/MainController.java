@@ -29,7 +29,7 @@ import views.TestManagePanel;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class MainController {
     private JFrame jfrMain;

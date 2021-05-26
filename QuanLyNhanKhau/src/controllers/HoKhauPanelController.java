@@ -22,7 +22,7 @@ import views.infoViews.InfoJframe;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class HoKhauPanelController {
     private List<HoKhauBean> list;

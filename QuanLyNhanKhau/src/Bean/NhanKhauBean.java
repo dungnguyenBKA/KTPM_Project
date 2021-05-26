@@ -9,7 +9,7 @@ import models.TieuSuModel;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class NhanKhauBean {
     private NhanKhauModel nhanKhauModel;

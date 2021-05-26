@@ -10,7 +10,7 @@ import services.MysqlConnection;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class DangKyTamTruController {
     public int checkCMT(String cmt) {

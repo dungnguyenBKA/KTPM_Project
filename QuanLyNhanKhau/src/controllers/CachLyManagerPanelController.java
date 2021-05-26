@@ -34,7 +34,7 @@ import java.util.List;
 
 /**
  *
- * @author DungLHT
+ * @author Dung
  */
 public class CachLyManagerPanelController {
     private JPanel jpnView;

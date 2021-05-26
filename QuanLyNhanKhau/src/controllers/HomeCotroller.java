@@ -8,7 +8,7 @@ import services.MysqlConnection;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class HomeCotroller {
     private JLabel tongNhanKhauLb;

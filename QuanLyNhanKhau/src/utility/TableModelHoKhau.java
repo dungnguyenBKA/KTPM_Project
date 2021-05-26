@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class TableModelHoKhau {
     public DefaultTableModel setTableNhanKhau(List<NhanKhauBean> listItem, String[] listColumn) {

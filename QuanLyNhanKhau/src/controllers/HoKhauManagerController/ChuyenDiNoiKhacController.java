@@ -20,7 +20,7 @@ import utility.TableModelHoKhau;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class ChuyenDiNoiKhacController {
     private HoKhauBean hoKhauBean;

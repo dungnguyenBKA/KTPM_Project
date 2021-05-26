@@ -2,7 +2,7 @@ package models;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class UserMoldel {
     private int ID;

@@ -4,7 +4,7 @@ import models.ThanhVienCuaHoModel;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class MemOfFamily {
     private NhanKhauBean nhanKhau;

@@ -23,7 +23,7 @@ import views.CachLyPanel;
 
 /**
  *
- * @author DungLHT
+ * @author Dung
  */
 public class CachLyService{
 

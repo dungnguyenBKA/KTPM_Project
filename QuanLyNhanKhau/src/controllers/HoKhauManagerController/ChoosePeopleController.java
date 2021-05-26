@@ -22,7 +22,7 @@ import utility.TableModelHoKhau;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class ChoosePeopleController {
     private NhanKhauBean nhanKhauBean;

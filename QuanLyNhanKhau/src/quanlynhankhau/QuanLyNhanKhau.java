@@ -8,7 +8,7 @@ import views.MainFrame;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class QuanLyNhanKhau {
 
@@ -18,6 +18,7 @@ public class QuanLyNhanKhau {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
+            e.printStackTrace();
         }
         LoginUI loginUI = new LoginUI();
         loginUI.setVisible(true);

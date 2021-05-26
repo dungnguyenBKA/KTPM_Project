@@ -18,7 +18,7 @@ import models.ThanhVienCuaHoModel;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class HoKhauService {
     // them moi ho khau

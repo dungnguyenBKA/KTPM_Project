@@ -30,7 +30,7 @@ import views.infoViews.InfoJframe;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class TachHoKhauController {
     private JTextField searchJtf;

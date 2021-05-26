@@ -15,7 +15,7 @@ import models.TieuSuModel;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class NhanKhauService {
     

@@ -3,7 +3,7 @@ import java.util.Date;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class NhanKhauModel {
     private int ID;

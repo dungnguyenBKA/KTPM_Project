@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class StringService {
     

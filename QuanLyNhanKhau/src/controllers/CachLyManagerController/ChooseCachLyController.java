@@ -26,7 +26,7 @@ import utility.ClassTableModel;
 
 /**
  *
- * @author DungLHT
+ * @author Dung
  */
 public class ChooseCachLyController {
     private NhanKhauBean nhanKhauBean;

@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class NhanKhauManagerPanelController {
     

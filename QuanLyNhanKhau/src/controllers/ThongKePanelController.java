@@ -23,7 +23,7 @@ import utility.ClassTableModel;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class ThongKePanelController {
     private JComboBox GenderJcb;

@@ -2,7 +2,7 @@ package models;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class ThanhVienCuaHoModel {
     private int idNhanKhau;

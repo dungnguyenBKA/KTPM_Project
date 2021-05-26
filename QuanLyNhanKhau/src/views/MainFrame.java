@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  *
- * @author Hai
+ * @author Dung
  */
 public class MainFrame extends javax.swing.JFrame {
 
@@ -91,18 +91,18 @@ public class MainFrame extends javax.swing.JFrame {
         jblTrangChu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/app.png"))); // NOI18N
         jblTrangChu.setText("Trang chủ");
 
-        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
+        GroupLayout HomeLayout = new GroupLayout(Home);
         Home.setLayout(HomeLayout);
         HomeLayout.setHorizontalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            HomeLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(HomeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jblTrangChu)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         HomeLayout.setVerticalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HomeLayout.createSequentialGroup()
+            HomeLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, HomeLayout.createSequentialGroup()
                 .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(jblTrangChu)
                 .addGap(21, 21, 21))
@@ -116,19 +116,19 @@ public class MainFrame extends javax.swing.JFrame {
         jlbNhanKhau.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/multiple-users-silhouette.png"))); // NOI18N
         jlbNhanKhau.setText("Nhân Khẩu");
 
-        javax.swing.GroupLayout NhanKhauBtnLayout = new javax.swing.GroupLayout(NhanKhauBtn);
+        GroupLayout NhanKhauBtnLayout = new GroupLayout(NhanKhauBtn);
         NhanKhauBtn.setLayout(NhanKhauBtnLayout);
         NhanKhauBtnLayout.setHorizontalGroup(
-            NhanKhauBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            NhanKhauBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(NhanKhauBtnLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlbNhanKhau)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         NhanKhauBtnLayout.setVerticalGroup(
-            NhanKhauBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, NhanKhauBtnLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            NhanKhauBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, NhanKhauBtnLayout.createSequentialGroup()
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jlbNhanKhau)
                 .addContainerGap())
         );
@@ -140,21 +140,21 @@ public class MainFrame extends javax.swing.JFrame {
         jlbHoKhau.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/home.png"))); // NOI18N
         jlbHoKhau.setText("Hộ Khẩu");
 
-        javax.swing.GroupLayout HoKhauBtnLayout = new javax.swing.GroupLayout(HoKhauBtn);
+        GroupLayout HoKhauBtnLayout = new GroupLayout(HoKhauBtn);
         HoKhauBtn.setLayout(HoKhauBtnLayout);
         HoKhauBtnLayout.setHorizontalGroup(
-            HoKhauBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            HoKhauBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(HoKhauBtnLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlbHoKhau)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         HoKhauBtnLayout.setVerticalGroup(
-            HoKhauBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            HoKhauBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(HoKhauBtnLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlbHoKhau)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         ThongKeBtn.setBackground(new java.awt.Color(102, 102, 102));
@@ -165,19 +165,19 @@ public class MainFrame extends javax.swing.JFrame {
         jlbThongKe.setText("Thống Kê");
         jlbThongKe.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        javax.swing.GroupLayout ThongKeBtnLayout = new javax.swing.GroupLayout(ThongKeBtn);
+        GroupLayout ThongKeBtnLayout = new GroupLayout(ThongKeBtn);
         ThongKeBtn.setLayout(ThongKeBtnLayout);
         ThongKeBtnLayout.setHorizontalGroup(
-            ThongKeBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            ThongKeBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(ThongKeBtnLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlbThongKe)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ThongKeBtnLayout.setVerticalGroup(
-            ThongKeBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ThongKeBtnLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            ThongKeBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, ThongKeBtnLayout.createSequentialGroup()
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jlbThongKe)
                 .addContainerGap())
         );
@@ -191,17 +191,17 @@ public class MainFrame extends javax.swing.JFrame {
         jlbKhaiBao.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jlbKhaiBao.setPreferredSize(new java.awt.Dimension(115, 54));
 
-        javax.swing.GroupLayout KhaiBaoBtnLayout = new javax.swing.GroupLayout(KhaiBaoBtn);
+        GroupLayout KhaiBaoBtnLayout = new GroupLayout(KhaiBaoBtn);
         KhaiBaoBtn.setLayout(KhaiBaoBtnLayout);
         KhaiBaoBtnLayout.setHorizontalGroup(
-            KhaiBaoBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KhaiBaoBtnLayout.createSequentialGroup()
+            KhaiBaoBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, KhaiBaoBtnLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jlbKhaiBao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jlbKhaiBao, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         KhaiBaoBtnLayout.setVerticalGroup(
-            KhaiBaoBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jlbKhaiBao, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            KhaiBaoBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(jlbKhaiBao, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         TestBtn.setBackground(new java.awt.Color(102, 102, 102));
@@ -212,19 +212,19 @@ public class MainFrame extends javax.swing.JFrame {
         jlbTest.setText("Test Covid");
         jlbTest.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        javax.swing.GroupLayout TestBtnLayout = new javax.swing.GroupLayout(TestBtn);
+        GroupLayout TestBtnLayout = new GroupLayout(TestBtn);
         TestBtn.setLayout(TestBtnLayout);
         TestBtnLayout.setHorizontalGroup(
-            TestBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            TestBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(TestBtnLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlbTest)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         TestBtnLayout.setVerticalGroup(
-            TestBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestBtnLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            TestBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, TestBtnLayout.createSequentialGroup()
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jlbTest)
                 .addContainerGap())
         );
@@ -237,96 +237,96 @@ public class MainFrame extends javax.swing.JFrame {
         jlbCachLy.setText("Cách Ly");
         jlbCachLy.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        javax.swing.GroupLayout CachLyBtnLayout = new javax.swing.GroupLayout(CachLyBtn);
+        GroupLayout CachLyBtnLayout = new GroupLayout(CachLyBtn);
         CachLyBtn.setLayout(CachLyBtnLayout);
         CachLyBtnLayout.setHorizontalGroup(
-            CachLyBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            CachLyBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(CachLyBtnLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlbCachLy)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CachLyBtnLayout.setVerticalGroup(
-            CachLyBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CachLyBtnLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            CachLyBtnLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(GroupLayout.Alignment.TRAILING, CachLyBtnLayout.createSequentialGroup()
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jlbCachLy)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jpnMenuLayout = new javax.swing.GroupLayout(jpnMenu);
+        GroupLayout jpnMenuLayout = new GroupLayout(jpnMenu);
         jpnMenu.setLayout(jpnMenuLayout);
         jpnMenuLayout.setHorizontalGroup(
-            jpnMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Home, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            jpnMenuLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(Home, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jpnMenuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jpnMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NhanKhauBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(HoKhauBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(KhaiBaoBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ThongKeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TestBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(CachLyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(jpnMenuLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                    .addComponent(NhanKhauBtn, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(HoKhauBtn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(KhaiBaoBtn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ThongKeBtn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TestBtn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CachLyBtn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jpnMenuLayout.setVerticalGroup(
-            jpnMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            jpnMenuLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(jpnMenuLayout.createSequentialGroup()
-                .addComponent(Home, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Home, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
-                .addComponent(NhanKhauBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NhanKhauBtn, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(HoKhauBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(HoKhauBtn, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(KhaiBaoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(KhaiBaoBtn, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(TestBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TestBtn, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(CachLyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CachLyBtn, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(ThongKeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ThongKeBtn, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 56, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jpnBeanLayout = new javax.swing.GroupLayout(jpnBean);
+        GroupLayout jpnBeanLayout = new GroupLayout(jpnBean);
         jpnBean.setLayout(jpnBeanLayout);
         jpnBeanLayout.setHorizontalGroup(
-            jpnBeanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            jpnBeanLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGap(0, 816, Short.MAX_VALUE)
         );
         jpnBeanLayout.setVerticalGroup(
-            jpnBeanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            jpnBeanLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jpnContainerLayout = new javax.swing.GroupLayout(jpnContainer);
+        GroupLayout jpnContainerLayout = new GroupLayout(jpnContainer);
         jpnContainer.setLayout(jpnContainerLayout);
         jpnContainerLayout.setHorizontalGroup(
-            jpnContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            jpnContainerLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(jpnContainerLayout.createSequentialGroup()
-                .addComponent(jpnMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpnBean, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jpnMenu, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpnBean, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jpnContainerLayout.setVerticalGroup(
-            jpnContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpnMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            jpnContainerLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(jpnMenu, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jpnContainerLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jpnBean, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jpnBean, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpnContainer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(jpnContainer, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpnContainer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addComponent(jpnContainer, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
