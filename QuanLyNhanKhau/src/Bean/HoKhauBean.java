@@ -12,7 +12,7 @@ import models.ThanhVienCuaHoModel;
  * ket noi tu nhien gia ho_khau va nhan_khau
  */
 
-public class HoKhauBean {
+ public class HoKhauBean {
     private HoKhauModel hoKhauModel;
     private NhanKhauModel chuHo;
     private List<NhanKhauModel> listNhanKhauModels;

@@ -10,7 +10,7 @@ import javax.swing.*;
  *
  * @author User
  */
-public class ChuyenDiNoiKhac extends javax.swing.JFrame {
+ public class ChuyenDiNoiKhac extends javax.swing.JFrame {
 
     private ChuyenDiNoiKhacController controller;
     private HoKhauBean hoKhauBean;

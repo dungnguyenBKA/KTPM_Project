@@ -11,7 +11,7 @@ import services.MysqlConnectionUtils;
  *
  * @author Dung
  */
-public class DangKyTamVangController {
+ public class DangKyTamVangController {
     
     public int checkCMT(String cmt) {
         try {

@@ -9,12 +9,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class SelectNhanKhau extends javax.swing.JFrame {
+ public class SelectNhanKhau extends javax.swing.JFrame {
     private KhaiBaoBean khaiBaoBean;
     private NhanKhauBean nhanKhauBeanTemp;
     private JFrame parentJFrame;
     private ChooseNhanKhauController controller;
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cancelBtn;
     private javax.swing.JButton confirmBtn;
     private javax.swing.JTextField searchJtf;
@@ -194,7 +193,7 @@ public class SelectNhanKhau extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {
         Close();

@@ -6,7 +6,7 @@ import models.ThanhVienCuaHoModel;
  *
  * @author Dung
  */
-public class MemOfFamily {
+ public class MemOfFamily {
     private NhanKhauBean nhanKhau;
     private ThanhVienCuaHoModel thanhVienCuaHoModel;
 

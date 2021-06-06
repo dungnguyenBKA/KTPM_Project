@@ -20,7 +20,7 @@ import utility.TableModelHoKhau;
  *
  * @author Dung
  */
-public class ThemMoiController {
+ public class ThemMoiController {
     private NhanKhauBean chuHo;
     private List<MemOfFamily> listThanhVien;
     private JPanel memTableJpn;

@@ -13,7 +13,7 @@ import models.TamVangModel;
  *
  * @author Dung
  */
-public class DangKyTamVangJFrame extends javax.swing.JFrame {
+ public class DangKyTamVangJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form DangKyTamVangJFrame

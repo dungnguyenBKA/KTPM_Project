@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ThongKeCachLyService {
+ public class ThongKeCachLyService {
 
 
     public static boolean validateJavaDate(String strDate) {

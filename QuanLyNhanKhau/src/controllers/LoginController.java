@@ -12,7 +12,7 @@ import services.MysqlConnectionUtils;
  *
  * @author Dung
  */
-public class LoginController {
+ public class LoginController {
     
     public static UserMoldel currentUser = new UserMoldel();
     

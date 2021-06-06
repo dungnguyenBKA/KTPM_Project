@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * @author hieppm
  */
-public class ThongKeCachLy extends javax.swing.JPanel {
+ public class ThongKeCachLy extends javax.swing.JPanel {
     private final String[] COLUMNS = {"Mã cách ly", "ID nhân khẩu", "Thời gian", "Mức độ", "Đã test?"};
     private CachLyService cachLyService;
     private List<CachLyBean> cachLyBeanList;
@@ -76,7 +76,7 @@ public class ThongKeCachLy extends javax.swing.JPanel {
         this.cachLyBeanList = cachLyBeanList;
     }
 
-    public ClassTableModel getClassTableModel() {
+     public classTableModel getClassTableModel() {
         return classTableModel;
     }
 

@@ -25,7 +25,7 @@ import java.util.Vector;
  * 
  * class dieu khien hoat dong cua TieuSuJFrame
  */
-public class TieuSuController {
+ public class TieuSuController {
     private NhanKhauBean nhanKhauBean;
     private JPanel tieuSuJpn;
     private JPanel giaDinhJpn;

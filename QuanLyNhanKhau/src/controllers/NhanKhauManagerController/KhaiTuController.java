@@ -11,7 +11,7 @@ import services.MysqlConnectionUtils;
  *
  * @author Dung
  */
-public class KhaiTuController {
+ public class KhaiTuController {
     public int checkCMT(String cmt) {
         try {
             Connection connection = MysqlConnectionUtils.getMysqlConnection();

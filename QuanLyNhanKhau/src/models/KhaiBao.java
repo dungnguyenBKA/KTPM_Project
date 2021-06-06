@@ -11,7 +11,7 @@ import java.sql.Date;
  *
  * @author hieppm
  */
-public class KhaiBao {
+ public class KhaiBao {
     private int id;
     private String vung_dich;
     private String bieu_hien;

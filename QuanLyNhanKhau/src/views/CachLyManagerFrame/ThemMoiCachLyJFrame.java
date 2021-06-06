@@ -21,7 +21,7 @@ import java.awt.event.WindowEvent;
  *
  * @author Dung
  */
-public class ThemMoiCachLyJFrame extends javax.swing.JFrame {
+ public class ThemMoiCachLyJFrame extends javax.swing.JFrame {
     private NhanKhauBean nguoiCachLy = new NhanKhauBean();
     private CachLyManagerPanelController parentController;
     private JFrame parentFrame;

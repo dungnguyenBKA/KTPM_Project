@@ -13,7 +13,7 @@ import views.CachLyManagerFrame.ThemMoiCachLyJFrame;
  *
  * @author Dung
  */
-public class CachLyPanel extends javax.swing.JPanel {
+ public class CachLyPanel extends javax.swing.JPanel {
     private JFrame parentJFrame;
     private CachLyManagerPanelController controller = null;
     private CachLyBean testCachLySelected;

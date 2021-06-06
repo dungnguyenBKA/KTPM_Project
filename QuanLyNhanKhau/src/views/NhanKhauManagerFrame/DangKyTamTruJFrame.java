@@ -16,7 +16,7 @@ import models.TamTruModel;
  *
  * @author Dung
  */
-public class DangKyTamTruJFrame extends javax.swing.JFrame {
+ public class DangKyTamTruJFrame extends javax.swing.JFrame {
 
     private JFrame parentFrame;
     private DangKyTamTruController controller;

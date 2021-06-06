@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author hieppm
  */
-public class Test {
+ public class Test {
     private int id;
     private int id_nhankhau;
     private String hinh_thuc_test;

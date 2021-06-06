@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 
-public class KhaiBaoService {
+ public class KhaiBaoService {
     public List<KhaiBaoBean> getListKhaiBao(String hoTen) {
 
         List<KhaiBaoBean> listKhaiBao = new ArrayList<>();

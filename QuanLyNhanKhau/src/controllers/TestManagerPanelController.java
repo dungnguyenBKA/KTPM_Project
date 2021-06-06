@@ -30,7 +30,7 @@ import java.util.List;
  *
  * @author ducnm
  */
-public class TestManagerPanelController {
+ public class TestManagerPanelController {
        private JButton deleteBtn;
        private JPanel jpnView;
 

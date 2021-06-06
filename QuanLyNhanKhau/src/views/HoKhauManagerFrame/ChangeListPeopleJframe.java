@@ -17,7 +17,7 @@ import javax.swing.*;
  *
  * @author Dung
  */
-public class ChangeListPeopleJframe extends javax.swing.JFrame {
+ public class ChangeListPeopleJframe extends javax.swing.JFrame {
 
     /**
      *     public ChangeListPeopleController(List<MemOfFamily> listMember, JButton addBtn, JButton removeBtn, JTextField searchJtf, JPanel peopleJpn, JPanel memJpn) {

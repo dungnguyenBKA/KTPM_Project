@@ -10,7 +10,7 @@ import services.MysqlConnectionUtils;
  *
  * @author Dung
  */
-public class HomeCotroller {
+ public class HomeCotroller {
     private JLabel tongNhanKhauLb;
     private JLabel tongHoKhauLb;
     private JLabel nhanKhauTamTruLb;

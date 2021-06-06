@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author hieppm
  */
-public class CachLyModel {
+ public class CachLyModel {
     private int id;
     private Date tgian_bat_dau;
     private String muc_do_cach_ly;

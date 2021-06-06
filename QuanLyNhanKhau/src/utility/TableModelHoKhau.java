@@ -10,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Dung
  */
-public class TableModelHoKhau {
+ public class TableModelHoKhau {
     public DefaultTableModel setTableNhanKhau(List<NhanKhauBean> listItem, String[] listColumn) {
         final int columns = listColumn.length;
         DefaultTableModel dtm = new DefaultTableModel()  {
@@ -19,7 +19,7 @@ public class TableModelHoKhau {
                 return super.isCellEditable(row, column); //To change body of generated methods, choose Tools | Templates.
             }
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 5 ? Boolean.class : String.class;
             }
         };
@@ -45,7 +45,7 @@ public class TableModelHoKhau {
                 return super.isCellEditable(row, column); //To change body of generated methods, choose Tools | Templates.
             }
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 3 ? Boolean.class : String.class;
             }
         };
@@ -69,7 +69,7 @@ public class TableModelHoKhau {
                 return super.isCellEditable(row, column); //To change body of generated methods, choose Tools | Templates.
             }
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 3 ? Boolean.class : String.class;
             }
         };

@@ -15,7 +15,7 @@ import models.NhanKhauModel;
  *
  * @author Dung
  */
-public class AddNewPeopleJFrame extends javax.swing.JFrame {
+ public class AddNewPeopleJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form AddNewPeopleJFrame

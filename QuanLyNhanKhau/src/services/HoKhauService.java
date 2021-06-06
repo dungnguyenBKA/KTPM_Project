@@ -20,7 +20,7 @@ import models.ThanhVienCuaHoModel;
  *
  * @author Dung
  */
-public class HoKhauService {
+ public class HoKhauService {
     // them moi ho khau
     public void addNew(HoKhauBean hoKhauBean) throws ClassNotFoundException, SQLException{
         Connection connection = MysqlConnectionUtils.getMysqlConnection();

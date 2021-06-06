@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.List;
 
-public class ChooseNhanKhauController {
+ public class ChooseNhanKhauController {
     private NhanKhauBean nhanKhauBean;
     private JTextField searchJtf;
     private JTextField selectedJtf;

@@ -7,7 +7,7 @@ import services.MysqlConnectionUtils;
 
 import java.sql.*;
 
-public class ThemMoiTestController {
+ public class ThemMoiTestController {
     public boolean themMoiTest(TestBean testBean) throws SQLException, ClassNotFoundException{
         NhanKhauModel nhanKhauModel = testBean.getNhanKhauModel();
         Test test = testBean.getTest();

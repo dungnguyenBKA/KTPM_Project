@@ -5,7 +5,7 @@ import java.sql.*;
  *
  * @author Dung
  */
-public class MysqlConnectionUtils {
+ public class MysqlConnectionUtils {
     public static Connection getMysqlConnection() throws SQLException, ClassNotFoundException {
         String hostName = "localhost";
         String dbName = "quan_ly_nhan_khau";

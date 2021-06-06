@@ -25,7 +25,7 @@ import utility.ClassTableModel;
  *
  * @author Dung
  */
-public class ThongKePanelController {
+ public class ThongKePanelController {
     private JComboBox GenderJcb;
     private JComboBox StatusJcb;
     private JTextField tuTuoiJtf;

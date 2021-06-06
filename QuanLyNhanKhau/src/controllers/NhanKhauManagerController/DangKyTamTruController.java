@@ -12,7 +12,7 @@ import services.MysqlConnectionUtils;
  *
  * @author Dung
  */
-public class DangKyTamTruController {
+ public class DangKyTamTruController {
     public int checkCMT(String cmt) {
         try {
             Connection connection = MysqlConnectionUtils.getMysqlConnection();

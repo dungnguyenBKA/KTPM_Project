@@ -11,7 +11,7 @@ import javax.swing.JPanel;
  *
  * @author Dung
  */
-public class DanhMucBean {
+ public class DanhMucBean {
     private String kind;
     private JPanel jpn;
     private JLabel jlb;

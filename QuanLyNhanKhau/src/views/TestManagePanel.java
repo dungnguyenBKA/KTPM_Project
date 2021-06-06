@@ -14,7 +14,7 @@ import java.sql.SQLException;
  *
  * @author Ducnm
  */
-public class TestManagePanel extends javax.swing.JPanel {
+ public class TestManagePanel extends javax.swing.JPanel {
     private JFrame parentJFrame;
     private TestManagerPanelController controller = null;
     private TestBean testBeanSelected;

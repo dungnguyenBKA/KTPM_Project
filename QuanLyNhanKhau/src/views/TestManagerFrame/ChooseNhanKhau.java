@@ -16,7 +16,7 @@ import java.awt.event.WindowEvent;
  *
  * @author ducnm
  */
-public class ChooseNhanKhau extends javax.swing.JFrame {
+ public class ChooseNhanKhau extends javax.swing.JFrame {
     private NhanKhauBean nhanKhauBean;
     private NhanKhauBean nhanKhauBeanTemp;
     private JFrame parentJFrame;

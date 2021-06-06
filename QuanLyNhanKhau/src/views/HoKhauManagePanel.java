@@ -17,7 +17,7 @@ import views.HoKhauManagerFrame.ThemMoiHoKhau;
  *
  * @author Ai làm thì diền tên vào
  */
-public class HoKhauManagePanel extends javax.swing.JPanel {
+ public class HoKhauManagePanel extends javax.swing.JPanel {
     
     private JFrame parentFrame;
     private HoKhauPanelController controller;

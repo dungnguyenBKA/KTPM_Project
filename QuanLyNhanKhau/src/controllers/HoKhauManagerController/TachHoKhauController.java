@@ -32,7 +32,7 @@ import views.infoViews.InfoJframe;
  *
  * @author Dung
  */
-public class TachHoKhauController {
+ public class TachHoKhauController {
     private JTextField searchJtf;
     private JPanel tableTopJpn;
     private JPanel tableBotJpn;

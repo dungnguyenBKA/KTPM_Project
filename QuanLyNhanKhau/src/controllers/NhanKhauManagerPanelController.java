@@ -21,7 +21,7 @@ import java.util.List;
  *
  * @author Dung
  */
-public class NhanKhauManagerPanelController {
+ public class NhanKhauManagerPanelController {
     
     private JPanel jpnView;
     private JTextField jtfSearch;

@@ -31,7 +31,7 @@ import views.TestManagePanel;
  *
  * @author Dung
  */
-public class MainController {
+ public class MainController {
     private JFrame jfrMain;
     private JPanel root;
     private String kindSelected;

@@ -14,7 +14,7 @@ import javax.swing.*;
  *
  * @author Dung
  */
-public class KhaiTuJFrame extends javax.swing.JFrame {
+ public class KhaiTuJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form KhaiTuJFrame

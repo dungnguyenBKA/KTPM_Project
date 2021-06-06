@@ -14,7 +14,7 @@ import javax.swing.*;
  *
  * @author User
  */
-public class TachHoKhau extends javax.swing.JFrame {
+ public class TachHoKhau extends javax.swing.JFrame {
 
     private TachHoKhauController controller;
     private JFrame parentJFrame;

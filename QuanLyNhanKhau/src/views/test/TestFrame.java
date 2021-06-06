@@ -3,7 +3,7 @@ package views.test;
 import javax.swing.*;
 import java.awt.*;
 
-public class TestFrame extends JFrame {
+ public class TestFrame extends JFrame {
     public TestFrame() {
         GroupLayout layout = new GroupLayout(getContentPane());
         layout.setAutoCreateGaps(true);

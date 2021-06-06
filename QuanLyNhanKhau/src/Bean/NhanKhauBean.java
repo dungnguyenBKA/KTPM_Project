@@ -11,7 +11,7 @@ import models.TieuSuModel;
  *
  * @author Dung
  */
-public class NhanKhauBean {
+ public class NhanKhauBean {
     private NhanKhauModel nhanKhauModel;
     private ChungMinhThuModel chungMinhThuModel;
     private List<TieuSuModel> listTieuSuModels;

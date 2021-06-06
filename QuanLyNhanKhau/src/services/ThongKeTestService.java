@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ThongKeTestService {
+ public class ThongKeTestService {
 
     public static boolean validateJavaDate(String strDate) {
         /* Check if date is 'null' */

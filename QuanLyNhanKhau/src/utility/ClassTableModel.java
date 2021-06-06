@@ -13,7 +13,7 @@ import java.util.List;
  * @author Hai
  * class dinh nghia cac dang table co trong phan mem
  */
-public class ClassTableModel {
+ public class ClassTableModel {
     // bang cho main frame
     public DefaultTableModel setTableNhanKhau(List<NhanKhauModel> listItem, String[] listColumn) {
         final int columns = listColumn.length;
@@ -24,7 +24,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 5 ? Boolean.class : String.class;
             }
         };
@@ -53,7 +53,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 5 ? Boolean.class : String.class;
             }
         };
@@ -85,7 +85,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 6 ? Boolean.class : String.class;
             }
         };
@@ -117,7 +117,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 6 ? Boolean.class : String.class;
             }
         };
@@ -146,7 +146,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 6 ? Boolean.class : String.class;
             }
         };
@@ -174,7 +174,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 5 ? Boolean.class : String.class;
             }
         };
@@ -201,7 +201,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 6 ? Boolean.class : String.class;
             }
         };
@@ -231,7 +231,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 6 ? Boolean.class : String.class;
             }
 
@@ -263,7 +263,7 @@ public class ClassTableModel {
             }
 
             @Override
-            public Class<?> getColumnClass(int columnIndex) {
+             public class<?> getColumnClass(int columnIndex) {
                 return columnIndex == 5 ? Boolean.class : String.class;
             }
         };

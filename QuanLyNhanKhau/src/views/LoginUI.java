@@ -10,7 +10,7 @@ import java.awt.event.*;
 /**
  * @author Dung
  */
-public class LoginUI extends JFrame {
+ public class LoginUI extends JFrame {
 
     private final LoginController controller = new LoginController();
 

@@ -26,7 +26,7 @@ import utility.TableModelHoKhau;
  *
  * @author Dung
  */
-public class ChangeListPeopleController {
+ public class ChangeListPeopleController {
     
     private JButton addBtn;
     private JButton removeBtn;

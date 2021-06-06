@@ -22,7 +22,7 @@ import utility.TableModelHoKhau;
  *
  * @author Dung
  */
-public class ChuyenDiNoiKhacController {
+ public class ChuyenDiNoiKhacController {
     private HoKhauBean hoKhauBean;
     private final HoKhauService hoKhauService = new HoKhauService();
     private JTextField searchJtf;

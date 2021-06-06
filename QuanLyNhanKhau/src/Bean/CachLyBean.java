@@ -12,7 +12,7 @@ import models.NhanKhauCachLy;
  *
  * @author Dung
  */
-public class CachLyBean {
+ public class CachLyBean {
     private CachLyModel cachLyModel;
     private NhanKhauCachLy nhanKhauCachLy;
     private NhanKhauModel nhanKhauModel;

@@ -10,7 +10,7 @@ import javax.swing.*;
  *
  * @author Dung
  */
-public class ChoosePeople extends javax.swing.JFrame {
+ public class ChoosePeople extends javax.swing.JFrame {
 
     private NhanKhauBean nhanKhauBean;
     private NhanKhauBean nhanKhauBeanTemp;

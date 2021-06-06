@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * @author hieppm
  */
-public class ThongKeTest extends javax.swing.JPanel {
+ public class ThongKeTest extends javax.swing.JPanel {
 
     private final String[] COLUMNS = {"Mã test", "ID nhân khẩu", "Người test","Thời điểm test", "Hình thức test", "Kết quả"};
     // Variables declaration - do not modify
@@ -120,7 +120,7 @@ public class ThongKeTest extends javax.swing.JPanel {
         this.testList = testList;
     }
 
-    public ClassTableModel getClassTableModel() {
+     public classTableModel getClassTableModel() {
         return classTableModel;
     }
 

@@ -10,7 +10,7 @@ import javax.swing.*;
  *
  * @author Dung
  */
-public class TieuSuJFrame extends javax.swing.JFrame {
+ public class TieuSuJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form TieuSuJFrame

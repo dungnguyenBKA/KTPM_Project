@@ -28,7 +28,7 @@ import utility.ClassTableModel;
  *
  * @author Dung
  */
-public class ChooseCachLyController {
+ public class ChooseCachLyController {
     private NhanKhauBean nhanKhauBean;
     private JTextField searchJtf;
     private JTextField selectedJtf;

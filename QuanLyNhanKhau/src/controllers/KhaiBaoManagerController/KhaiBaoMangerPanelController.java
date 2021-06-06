@@ -24,7 +24,7 @@ import java.util.List;
  * @author: hieppm
  */
 
-public class KhaiBaoMangerPanelController {
+ public class KhaiBaoMangerPanelController {
     private final String[] COLUMNS = {"Họ tên", "ID nhân khẩu", "Ngày sinh", "Ngày khai báo", "Biểu hiện", "Vùng dịch"};
     public List<KhaiBaoBean> khaiBaoBeanList;
     private JPanel jpnView;
@@ -67,7 +67,7 @@ public class KhaiBaoMangerPanelController {
         this.khaiBaoBeanList = khaiBaoBeanList;
     }
 
-    public ClassTableModel getClassTableModel() {
+     public classTableModel getClassTableModel() {
         return classTableModel;
     }
 

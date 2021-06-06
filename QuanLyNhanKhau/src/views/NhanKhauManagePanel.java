@@ -12,7 +12,7 @@ import javax.swing.*;
  *
  * @author Dung
  */
-public class NhanKhauManagePanel extends javax.swing.JPanel {
+ public class NhanKhauManagePanel extends javax.swing.JPanel {
 
     /**
      * Creates new form NhanKhauManagePanel

@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Dung
  */
-public class GiaDinhModel {
+ public class GiaDinhModel {
     private int ID;
     private int idNhanKhau;
     private String hoTen;

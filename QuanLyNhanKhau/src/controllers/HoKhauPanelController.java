@@ -24,7 +24,7 @@ import views.infoViews.InfoJframe;
  *
  * @author Dung
  */
-public class HoKhauPanelController {
+ public class HoKhauPanelController {
     private List<HoKhauBean> list;
     private JTextField searchJtf;
     private JPanel tableJpn;

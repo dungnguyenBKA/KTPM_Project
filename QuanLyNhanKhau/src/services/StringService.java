@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  *
  * @author Dung
  */
-public class StringService {
+ public class StringService {
     
     public static String covertToString(String value) {
         try {

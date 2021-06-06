@@ -15,7 +15,7 @@ import models.TieuSuModel;
 /**
  * @author hieppm
  */
-public class KhaiBaoBean {
+ public class KhaiBaoBean {
     private NhanKhauModel nhanKhauModel;
     private KhaiBao khaiBaoModel;
 

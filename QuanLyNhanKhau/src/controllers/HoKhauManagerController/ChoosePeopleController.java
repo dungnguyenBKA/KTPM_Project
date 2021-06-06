@@ -24,7 +24,7 @@ import utility.TableModelHoKhau;
  *
  * @author Dung
  */
-public class ChoosePeopleController {
+ public class ChoosePeopleController {
     private NhanKhauBean nhanKhauBean;
     private JTextField searchJtf;
     private JTextField selectedJtf;

@@ -10,7 +10,7 @@ import java.sql.*;
 /**
  * @author hieppm
  */
-public class ThemMoiKhaiBaoController {
+ public class ThemMoiKhaiBaoController {
     public boolean themKhaiBao(KhaiBaoBean khaiBaoBean) throws SQLException, ClassNotFoundException {
         KhaiBao khaiBao = khaiBaoBean.getKhaiBaoModel();
         System.out.println(khaiBao.getVung_dich());

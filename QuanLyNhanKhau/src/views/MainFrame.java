@@ -19,7 +19,7 @@ import java.util.List;
  *
  * @author Dung
  */
-public class MainFrame extends javax.swing.JFrame {
+ public class MainFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form MainFrame

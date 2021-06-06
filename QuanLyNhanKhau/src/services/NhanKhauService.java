@@ -16,7 +16,7 @@ import models.TieuSuModel;
  *
  * @author Dung
  */
-public class NhanKhauService {
+ public class NhanKhauService {
     
     /* 
      * Ham lay ra 1 nhan khau trong db bang chung minh thu

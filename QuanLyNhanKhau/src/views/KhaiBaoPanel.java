@@ -12,7 +12,7 @@ import java.sql.SQLException;
 /**
  * @author hieppm
  */
-public class KhaiBaoPanel extends javax.swing.JPanel {
+ public class KhaiBaoPanel extends javax.swing.JPanel {
     private JFrame parentFrame;
     private KhaiBaoMangerPanelController controller = null;
     // Variables declaration - do not modify//GEN-BEGIN:variables

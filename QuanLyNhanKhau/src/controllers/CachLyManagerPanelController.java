@@ -32,7 +32,7 @@ import java.util.List;
  *
  * @author Dung
  */
-public class CachLyManagerPanelController {
+ public class CachLyManagerPanelController {
     private JPanel jpnView;
     private JTextField jtfSearch;
     private CachLyService cachLyService;

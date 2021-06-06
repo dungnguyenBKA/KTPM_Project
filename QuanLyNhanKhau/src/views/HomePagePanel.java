@@ -8,7 +8,7 @@ import javax.swing.*;
  *
  * @author Ai làm thì điền tên vào
  */
-public class HomePagePanel extends javax.swing.JPanel {
+ public class HomePagePanel extends javax.swing.JPanel {
 
     private HomeCotroller cotroller;
     public HomePagePanel() {

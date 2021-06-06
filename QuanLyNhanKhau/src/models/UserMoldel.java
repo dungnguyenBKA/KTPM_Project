@@ -4,7 +4,7 @@ package models;
  *
  * @author Dung
  */
-public class UserMoldel {
+ public class UserMoldel {
     private int ID;
     private String userName;
     private String passwd;

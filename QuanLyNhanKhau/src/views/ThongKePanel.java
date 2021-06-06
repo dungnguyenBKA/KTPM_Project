@@ -8,7 +8,7 @@ import javax.swing.*;
  *
  * @author hieppm
  */
-public class ThongKePanel extends javax.swing.JPanel {
+ public class ThongKePanel extends javax.swing.JPanel {
     private JFrame parentFrame;
     private ThongKePanelController controller;
     /**

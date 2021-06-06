@@ -16,7 +16,7 @@ import java.sql.Date;
  * @author Dung
  */
 
-public class ThemMoiCachLyController {
+ public class ThemMoiCachLyController {
     public boolean themMoiCachLy(CachLyBean cachLyBean) throws SQLException, ClassNotFoundException{
         NhanKhauModel nhanKhauModel = cachLyBean.getNhanKhauModel();
         CachLyModel cachLy = cachLyBean.getCachLyModel();

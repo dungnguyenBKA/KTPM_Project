@@ -4,7 +4,7 @@ package models;
  *
  * @author Dung
  */
-public class ThanhVienCuaHoModel {
+ public class ThanhVienCuaHoModel {
     private int idNhanKhau;
     private int idHoKhau;
     private String quanHeVoiChuHo;

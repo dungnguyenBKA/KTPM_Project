@@ -19,7 +19,7 @@ import models.NhanKhauModel;
  *
  * @author Dung
  */
-public class CachLyService{
+ public class CachLyService{
 
     public List<CachLyBean> getListCachLyBeans(String hoTen) {
         List<CachLyBean> list = new ArrayList<>();

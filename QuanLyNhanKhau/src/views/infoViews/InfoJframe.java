@@ -8,7 +8,7 @@ import javax.swing.*;
  *
  * @author Dung
  */
-public class InfoJframe extends javax.swing.JFrame {
+ public class InfoJframe extends javax.swing.JFrame {
 
     private String content;
     private JFrame parentJFrame;

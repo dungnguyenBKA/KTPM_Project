@@ -16,7 +16,7 @@ import models.ThanhVienCuaHoModel;
  *
  * @author User
  */
-public class ThemMoiHoKhau extends javax.swing.JFrame {
+ public class ThemMoiHoKhau extends javax.swing.JFrame {
 
     private JFrame parentJFrame;
     private NhanKhauBean chuHo = new NhanKhauBean();

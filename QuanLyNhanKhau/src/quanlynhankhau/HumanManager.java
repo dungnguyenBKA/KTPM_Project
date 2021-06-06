@@ -9,7 +9,7 @@ import java.util.Calendar;
  *
  * @author Dung
  */
-public class HumanManager {
+ public class HumanManager {
 
     public static Calendar calendar = Calendar.getInstance();
     

@@ -11,7 +11,7 @@ import javax.swing.*;
  *
  * @author Ai làm thì điền tên vào
  */
-public class TimKiemPanel extends javax.swing.JPanel {
+ public class TimKiemPanel extends javax.swing.JPanel {
     private JFrame parentFrame;
     /**
      * Creates new form TimKiemPanel
