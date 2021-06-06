@@ -7,12 +7,9 @@ package controllers;
 
 import Bean.CachLyBean;
 import Bean.NhanKhauBean;
-import Bean.TestBean;
 import models.CachLyModel;
-import models.NhanKhauModel;
-import models.Test;
 import services.CachLyService;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 import services.NhanKhauService;
 import utility.ClassTableModel;
 
@@ -23,7 +20,6 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -168,7 +164,7 @@ public class CachLyManagerPanelController {
 
     public boolean xoaCachLy(CachLyBean cachLyBean) throws SQLException, ClassNotFoundException{
         CachLyModel cachLyModel = cachLyBean.getCachLyModel();
-        Connection connection = MysqlConnection.getMysqlConnection();
+        Connection connection = MysqlConnectionUtils.getMysqlConnection();
         String query = "DELETE FROM cach_ly WHERE id_cachly = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
         preparedStatement.setInt(1, cachLyModel.getCachly_id());

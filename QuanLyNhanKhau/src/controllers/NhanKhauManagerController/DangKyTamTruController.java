@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import models.TamTruModel;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 
 /**
  *
@@ -15,7 +15,7 @@ import services.MysqlConnection;
 public class DangKyTamTruController {
     public int checkCMT(String cmt) {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM nhan_khau LEFT JOIN chung_minh_thu ON nhan_khau.ID = chung_minh_thu.idNhanKhau WHERE soCMT = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, cmt);
@@ -31,7 +31,7 @@ public class DangKyTamTruController {
     
     public boolean addNew(TamTruModel tamTruModel) {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "INSERT INTO tam_tru(idNhanKhau, maGiayTamTru, soDienThoaiNguoiDangKy, tuNgay, denNgay, lyDo)" + " value (?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, tamTruModel.getIdNhanKhau());

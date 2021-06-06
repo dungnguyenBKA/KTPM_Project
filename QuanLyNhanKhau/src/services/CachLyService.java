@@ -7,19 +7,13 @@ package services;
 
 import Bean.CachLyBean;
 
-import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-import Bean.KhaiBaoBean;
-import Bean.TestBean;
 import models.CachLyModel;
-import models.KhaiBao;
 import models.NhanKhauModel;
-import models.Test;
-import views.CachLyPanel;
 
 /**
  *
@@ -31,7 +25,7 @@ public class CachLyService{
         List<CachLyBean> list = new ArrayList<>();
 
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query;
                 //need fix query
             query = "select * from cach_ly left join nhan_khau nk on cach_ly.id_nhankhau = nk.ID";
@@ -97,7 +91,7 @@ public class CachLyService{
 
         // execute query
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){

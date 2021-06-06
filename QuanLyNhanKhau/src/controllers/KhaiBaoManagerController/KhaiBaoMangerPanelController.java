@@ -1,10 +1,9 @@
 package controllers.KhaiBaoManagerController;
 
 import Bean.KhaiBaoBean;
-import models.KhaiBao;
 import models.NhanKhauModel;
 import services.KhaiBaoService;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 import utility.ClassTableModel;
 
 import javax.swing.*;
@@ -170,7 +169,7 @@ public class KhaiBaoMangerPanelController {
 
     public boolean xoaKhaiBao(KhaiBaoBean khaiBaoBean) throws SQLException, ClassNotFoundException {
         NhanKhauModel nhanKhauModel = khaiBaoBean.getNhanKhauModel();
-        Connection connection = MysqlConnection.getMysqlConnection();
+        Connection connection = MysqlConnectionUtils.getMysqlConnection();
         String query = "DELETE FROM khai_bao WHERE id_nhankhau = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
         preparedStatement.setInt(1, nhanKhauModel.getID());

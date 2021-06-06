@@ -1,7 +1,13 @@
 package views.NhanKhauManagerFrame;
 
+import services.MysqlConnectionUtils;
+
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.*;
 
 /**
@@ -59,6 +65,7 @@ public class KhaiTuJFrame extends javax.swing.JFrame {
         jDateChooser2 = new com.toedter.calendar.JDateChooser();
         jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
+        jScrollPane1.setVisible(false);
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -78,7 +85,7 @@ public class KhaiTuJFrame extends javax.swing.JFrame {
         jLabel2.setText("Số giấy khai tử:");
 
         jTextField2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField2.setEnabled(false);
+//        jTextField2.setEnabled(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -86,6 +93,11 @@ public class KhaiTuJFrame extends javax.swing.JFrame {
         });
 
         jButton2.setText("Xác nhận");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Hủy");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -121,15 +133,15 @@ public class KhaiTuJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/checked.png"))); // NOI18N
+        jLabel3.setIcon(new ImageIcon(getClass().getResource("/Icons/checked.png"))); // NOI18N
         jLabel3.setEnabled(false);
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel7.setText("Số CMT người chết:");
 
-        jTextField3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField3.setFont(new Font("Arial", 0, 14)); // NOI18N
 
-        jButton4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jButton4.setFont(new Font("Arial", 0, 14)); // NOI18N
         jButton4.setText("Check");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,23 +257,90 @@ public class KhaiTuJFrame extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+//        String cmt = ;
+        confirmCMT(jTextField1.getText().trim());
+    }
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    private void confirmCMT(String cmt) {
+        if(checkCmt(cmt) != -1) {
+            JOptionPane.showMessageDialog(null, "Số CMT OK!!", "OK!!", JOptionPane.WARNING_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Sai CMT, thử lại", "Warning!!", JOptionPane.WARNING_MESSAGE);
+        }
+    }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private int checkCmt(String cmt) {
+        try {
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
+            String query = "SELECT * FROM nhan_khau LEFT JOIN chung_minh_thu ON nhan_khau.ID = chung_minh_thu.idNhanKhau WHERE soCMT = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, cmt);
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs.next()) {
+                return rs.getInt("ID");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Có lỗi xảy ra! vui lòng kiểm tra lại.", "Warning!!", JOptionPane.WARNING_MESSAGE);
+        }
+        return -1;
+    }
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {
+
+    }
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         close();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+        dispose();
+//        setVisible(false);
+    }
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
+        if(!jTextField1.getText().trim().equals(jTextField3.getText().trim())) {
+            confirmCMT(jTextField3.getText().trim());
+        } else {
+            JOptionPane.showMessageDialog(null, "Chết rồi thì làm sao khai báo??", "Warning!!", JOptionPane.WARNING_MESSAGE);
+        }
+    }
+
+//    private void checkCMT() {
+//        String tempCMT = this.soCMTjtf.getText().trim() ;
+//        if (tempCMT.isEmpty()) {
+//            JOptionPane.showMessageDialog(null, "Vui lòng nhập So CMT", "Warning!!", JOptionPane.WARNING_MESSAGE);
+//            return;
+//        } else {
+//            try {
+//                long cmt = Long.parseLong(tempCMT);
+//            } catch (Exception e) {
+//                JOptionPane.showMessageDialog(null, "Vui lòng nhập So CMT đúng định dạng!", "Warning!!", JOptionPane.WARNING_MESSAGE);
+//                return;
+//            }
+//        }
+//        int tempID = controller.checkCMT(this.soCMTjtf.getText());
+//        if( tempID != -1){
+//            this.soCMTjtf.setEditable(false);
+//            this.availableIcon.setEnabled(true);
+//            this.maGiayTamVangJtf.setEnabled(true);
+//            this.noiTamTruJtf.setEnabled(true);
+//            this.tuNgayJdc.setEnabled(true);
+//            this.denNgayJdc.setEnabled(true);
+//            this.lyDoJta.setEnabled(true);
+//
+//            this.tamVangModel.setIdNhanKhau(tempID);
+//            this.availableIcon.setEnabled(true);
+//            JOptionPane.showMessageDialog(this, "OK!!");
+//        } else {
+//            if (JOptionPane.showConfirmDialog(null, "Không tìm thấy nhân khẩu trong hệ thống!! Thử lại?", "Warning!!", JOptionPane.OK_CANCEL_OPTION) != 0) {
+//                close();
+//            }
+//        }
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

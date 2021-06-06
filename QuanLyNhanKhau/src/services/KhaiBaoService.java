@@ -1,9 +1,6 @@
 package services;
 
 import Bean.KhaiBaoBean;
-import Bean.NhanKhauBean;
-import controllers.KhaiBaoManagerController.KhaiBaoMangerPanelController;
-import models.ChungMinhThuModel;
 import models.KhaiBao;
 import models.NhanKhauModel;
 
@@ -24,7 +21,7 @@ public class KhaiBaoService {
 
         List<KhaiBaoBean> listKhaiBao = new ArrayList<>();
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query;
             if (hoTen != "") {
                 query = String.format("SELECT * FROM khai_bao join nhan_khau on khai_bao.id_nhankhau = nhan_khau.ID where nhan_khau.hoTen = \'%s\' ", hoTen);
@@ -63,7 +60,7 @@ public class KhaiBaoService {
 
     public void removeKhaiBao(String IDNhanKhau) {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query_turn_off_safe_mode = "SET SQL_SAFE_UPDATES = 0";
             PreparedStatement preparedStatement_safe_mode = (PreparedStatement) connection.prepareStatement(query_turn_off_safe_mode);
             preparedStatement_safe_mode.executeQuery();
@@ -116,7 +113,7 @@ public class KhaiBaoService {
 
         // execute query
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
@@ -145,7 +142,7 @@ public class KhaiBaoService {
     public String getChungMinhThu(String hoTen, String namSinh) {
         String cmt = "";
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "select soCMT from chung_minh_thu join nhan_khau nk on nk.ID = chung_minh_thu.idNhanKhau ";
             query += String.format("where nk.hoTen = '%s' and nk.namSinh = '%s'", hoTen, namSinh);
             PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement(query);
@@ -196,7 +193,7 @@ public class KhaiBaoService {
     public String getMaNhanKhau(String hoTen, String namSinh) {
         String maNhanKhau = "";
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "select maNhanKhau from nhan_khau nk ";
             query += String.format("where nk.hoTen = '%s' and nk.namSinh = '%s'", hoTen, namSinh);
             PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement(query);

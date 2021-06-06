@@ -67,7 +67,7 @@ public class HoKhauBean {
 
     @Override
     public String toString() {
-        String res = "<html> <style>p {padding: 5px; margin-left: 20px} table, th, td {border: 1px solid black; border-collapse: collapse;} table {width: 500px}</style> <div>"
+        StringBuilder res = new StringBuilder("<html> <style>p {padding: 5px; margin-left: 20px} table, th, td {border: 1px solid black; border-collapse: collapse;} table {width: 500px}</style> <div>"
                 + "<h3>Thông tin cơ bản"
                 + "<p>Mã hộ khẩu: <b>" + hoKhauModel.getMaHoKhau() + "</p>"
                 + "<p>Họ tên chủ hộ: <b>" + chuHo.getHoTen() + "</p>"
@@ -79,25 +79,12 @@ public class HoKhauBean {
                 + "<th>Ngày sinh</th>"
                 + "<th>Giới tính</th>"
                 + "<th>Quan hệ với chủ hộ</th>"
-                + "</tr>";
+                + "</tr>");
         for (int i = 0; i < listNhanKhauModels.size(); i++) {
-            res += "<tr>"
-                    + "<td>"
-                    + listNhanKhauModels.get(i).getHoTen()
-                    + "</td>"
-                    + "<td>"
-                    + listNhanKhauModels.get(i).getNamSinh().toString()
-                    + "</td>"
-                    + "<td>"
-                    + listNhanKhauModels.get(i).getGioiTinh()
-                    + "</td>"
-                    + "<td>"
-                    + listThanhVienCuaHo.get(i).getQuanHeVoiChuHo()
-                    + "</td>"
-                    + "</tr>";
+            res.append("<tr>" + "<td>").append(listNhanKhauModels.get(i).getHoTen()).append("</td>").append("<td>").append(listNhanKhauModels.get(i).getNamSinh().toString()).append("</td>").append("<td>").append(listNhanKhauModels.get(i).getGioiTinh()).append("</td>").append("<td>").append(listThanhVienCuaHo.get(i).getQuanHeVoiChuHo()).append("</td>").append("</tr>");
         }
-        res += "</table></div></html>";
-        return res;
+        res.append("</table></div></html>");
+        return res.toString();
     }
 
 }

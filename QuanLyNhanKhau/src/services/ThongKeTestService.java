@@ -1,6 +1,5 @@
 package services;
 
-import models.CachLyModel;
 import models.Test;
 
 import java.sql.Connection;
@@ -47,7 +46,7 @@ public class ThongKeTestService {
         List<Test> list = new ArrayList<>();
 
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = String.format("SELECT * FROM test");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
@@ -74,7 +73,7 @@ public class ThongKeTestService {
     public List<Test> getListCachLy(String tinhTrang, String tgianCachLy) {
         List<Test> list = new ArrayList<>();
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             //need fix query
             String query = String.format("SELECT * FROM test where ket_qua = '%s'", tinhTrang);
             if (!tgianCachLy.trim().equals("")) {
@@ -104,7 +103,7 @@ public class ThongKeTestService {
     public String getHoTen(String id){
         String hoTen = "";
         try{
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "select hoTen from nhan_khau where ID = " + id;
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();

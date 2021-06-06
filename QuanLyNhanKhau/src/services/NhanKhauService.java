@@ -1,6 +1,5 @@
 package services;
 
-import Bean.KhaiBaoBean;
 import Bean.NhanKhauBean;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -27,7 +26,7 @@ public class NhanKhauService {
         NhanKhauBean nhanKhauBean = new NhanKhauBean();
         // truy cap db
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM nhan_khau INNER JOIN chung_minh_thu ON nhan_khau.ID = chung_minh_thu.idNhanKhau WHERE soCMT = " + cmt;
             PreparedStatement preparedStatement = (PreparedStatement)connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
@@ -104,7 +103,7 @@ public class NhanKhauService {
     public List<NhanKhauBean> getListNhanKhau() {
         List<NhanKhauBean> list = new ArrayList<>();
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM nhan_khau INNER JOIN chung_minh_thu ON nhan_khau.ID = chung_minh_thu.idNhanKhau ORDER BY ngayTao DESC LIMIT 0, 10";
             PreparedStatement preparedStatement = (PreparedStatement)connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
@@ -166,7 +165,7 @@ public class NhanKhauService {
         }
         query += " ORDER BY ngayTao DESC";
          try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = (PreparedStatement)connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             int idNhanKhau = -1;
@@ -273,7 +272,7 @@ public class NhanKhauService {
         
         // execute query
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){

@@ -2,7 +2,7 @@ package controllers.KhaiBaoManagerController;
 
 import Bean.KhaiBaoBean;
 import models.KhaiBao;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 
 import java.sql.*;
 
@@ -17,7 +17,7 @@ public class ThemMoiKhaiBaoController {
         System.out.println(khaiBao.getBieu_hien());
         System.out.println(khaiBao.getNgay_khai_bao());
         System.out.println(khaiBao.getNhankhau_id());
-        Connection connection = MysqlConnection.getMysqlConnection();
+        Connection connection = MysqlConnectionUtils.getMysqlConnection();
         if (connection == null) {
             System.out.println("Connection fail");
         }
@@ -40,7 +40,7 @@ public class ThemMoiKhaiBaoController {
     public int getNhanKhauID(String ma_nhan_khau) {
         int res = -1;
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = String.format("Select ID from nhan_khau where maNhanKhau = \'%s\'" , ma_nhan_khau);
             PreparedStatement preparedStatement = (PreparedStatement) connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();

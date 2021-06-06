@@ -284,7 +284,7 @@ public class ThemMoiTest extends javax.swing.JFrame {
                 }
             } catch (Exception e){
                 System.out.println(e.getMessage());
-                JOptionPane.showMessageDialog(rootPane, "Có lỗi xảy ra. Vui lòng kiểm tra lại!!", "Warning", JOptionPane.ERROR_MESSAGE );
+                JOptionPane.showMessageDialog(rootPane, e.getMessage(), "Warning", JOptionPane.ERROR_MESSAGE );
             }
         }
 

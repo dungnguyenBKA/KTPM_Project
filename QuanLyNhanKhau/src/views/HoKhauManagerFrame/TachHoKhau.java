@@ -125,7 +125,7 @@ public class TachHoKhau extends javax.swing.JFrame {
         jLabel5.setText("Chủ hộ mới");
 
         chuHoMoiJtf.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        chuHoMoiJtf.setEnabled(false);
+        chuHoMoiJtf.setEnabled(true);
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 0, 0));

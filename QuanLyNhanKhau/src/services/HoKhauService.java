@@ -22,8 +22,8 @@ import models.ThanhVienCuaHoModel;
  */
 public class HoKhauService {
     // them moi ho khau
-    public boolean addNew(HoKhauBean hoKhauBean) throws ClassNotFoundException, SQLException{
-        Connection connection = MysqlConnection.getMysqlConnection();
+    public void addNew(HoKhauBean hoKhauBean) throws ClassNotFoundException, SQLException{
+        Connection connection = MysqlConnectionUtils.getMysqlConnection();
         String query = "INSERT INTO ho_khau(maHoKhau, idChuHo, maKhuVuc, diaChi, ngayLap)" 
                     + " values (?, ?, ?, ?, NOW())";
         PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
@@ -53,13 +53,12 @@ public class HoKhauService {
         }
         preparedStatement.close();
         connection.close();
-        return true;
     }
     
     
     public boolean checkPerson(int id) {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM ho_khau INNER JOIN thanh_vien_cua_ho ON ho_khau.ID = thanh_vien_cua_ho.idHoKhau"
                         + " WHERE ho_khau.idChuHo = "
                         + id 
@@ -80,7 +79,7 @@ public class HoKhauService {
         List<HoKhauBean> list = new ArrayList<>();
         
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM ho_khau INNER JOIN nhan_khau ON ho_khau.idChuHo = nhan_khau.ID ORDER BY ngayTao DESC LIMIT 0, 10";
             PreparedStatement preparedStatement = (PreparedStatement)connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
@@ -147,7 +146,7 @@ public class HoKhauService {
     public List<HoKhauBean> search(String key) {
         List<HoKhauBean> list = new ArrayList<>();
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * "
                         + "FROM ho_khau "
                         + "INNER JOIN nhan_khau "
@@ -228,7 +227,7 @@ public class HoKhauService {
         // xoa chu ho
         String query = "DELETE FROM thanh_vien_cua_ho WHERE idNhanKhau = " + hoKhauBean.getChuHo().getID();   
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             int rs = preparedStatement.executeUpdate();
         } catch (Exception e) {
@@ -239,7 +238,7 @@ public class HoKhauService {
         hoKhauBean.getListThanhVienCuaHo().forEach((ThanhVienCuaHoModel item) -> {
             String sql = "DELETE FROM thanh_vien_cua_ho WHERE idNhanKhau = " + item.getIdHoKhau();
             try {
-                Connection connection = MysqlConnection.getMysqlConnection();
+                Connection connection = MysqlConnectionUtils.getMysqlConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
                 int rs = preparedStatement.executeUpdate();
             } catch (Exception e) {
@@ -254,7 +253,7 @@ public class HoKhauService {
             this.addNew(hoKhauBean);
             JOptionPane.showMessageDialog(null, "Thêm thành công!");
         } catch (Exception e) {
-            System.out.println("services.HoKhauService.tachHoKhau()");
+            System.out.println(e.getMessage());
         } 
     }
     public void chuyenDi(int idhoKhau, String noiChuyenDen, String lyDoChuyen) {
@@ -269,7 +268,7 @@ public class HoKhauService {
                 + LoginController.currentUser.getID()
                 + " WHERE ho_khau.ID = " + idhoKhau;
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             int rs = preparedStatement.executeUpdate();
         } catch (Exception e) {

@@ -7,7 +7,7 @@ package controllers;
 
 import Bean.TestBean;
 import models.Test;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 import services.TestService;
 import utility.ClassTableModel;
 
@@ -145,7 +145,7 @@ public class TestManagerPanelController {
 
        public boolean xoaTest(TestBean testBean) throws SQLException, ClassNotFoundException{
               Test test = testBean.getTest();
-              Connection connection = MysqlConnection.getMysqlConnection();
+              Connection connection = MysqlConnectionUtils.getMysqlConnection();
               String query = "DELETE FROM test WHERE id_test = ?";
               PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
               preparedStatement.setInt(1, test.getTestId());

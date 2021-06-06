@@ -1,16 +1,15 @@
 package quanlynhankhau;
 
-import java.sql.SQLException;
-import java.util.Calendar;
-import javax.swing.UIManager;
 import views.LoginUI;
-import views.MainFrame;
+
+import javax.swing.*;
+import java.util.Calendar;
 
 /**
  *
  * @author Dung
  */
-public class QuanLyNhanKhau {
+public class HumanManager {
 
     public static Calendar calendar = Calendar.getInstance();
     

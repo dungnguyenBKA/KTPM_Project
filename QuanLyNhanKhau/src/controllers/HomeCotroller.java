@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JLabel;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 
 /**
  *
@@ -31,7 +31,7 @@ public class HomeCotroller {
 
     public void setData() {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT COUNT(*) AS tong FROM nhan_khau";
             PreparedStatement preparedStatement = (PreparedStatement)connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();

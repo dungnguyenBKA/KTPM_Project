@@ -46,7 +46,7 @@ public class ThongKeCachLyService {
         List<CachLyModel> list = new ArrayList<>();
 
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             //need fix query
             String query = "";
             if (tgianCachLy.trim().equals("")) {
@@ -82,7 +82,7 @@ public class ThongKeCachLyService {
         List<CachLyModel> list = new ArrayList<>();
 
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = String.format("SELECT * FROM cach_ly");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();

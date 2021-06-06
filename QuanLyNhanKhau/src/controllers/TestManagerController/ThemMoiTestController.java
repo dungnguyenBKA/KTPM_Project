@@ -3,7 +3,7 @@ package controllers.TestManagerController;
 import Bean.TestBean;
 import models.NhanKhauModel;
 import models.Test;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 
 import java.sql.*;
 
@@ -11,7 +11,7 @@ public class ThemMoiTestController {
     public boolean themMoiTest(TestBean testBean) throws SQLException, ClassNotFoundException{
         NhanKhauModel nhanKhauModel = testBean.getNhanKhauModel();
         Test test = testBean.getTest();
-        Connection connection = MysqlConnection.getMysqlConnection();
+        Connection connection = MysqlConnectionUtils.getMysqlConnection();
         String query = "INSERT INTO test (id_test, id_nhankhau, thoi_diem_test, hinh_thuc_test, ket_qua)"
                 + "values (?, ?, ?, ?, ?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);

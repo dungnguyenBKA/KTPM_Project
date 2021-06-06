@@ -3,7 +3,7 @@ package controllers.CachLyManagerController;
 import Bean.CachLyBean;
 import models.CachLyModel;
 import models.NhanKhauModel;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,7 +20,7 @@ public class ThemMoiCachLyController {
     public boolean themMoiCachLy(CachLyBean cachLyBean) throws SQLException, ClassNotFoundException{
         NhanKhauModel nhanKhauModel = cachLyBean.getNhanKhauModel();
         CachLyModel cachLy = cachLyBean.getCachLyModel();
-        Connection connection = MysqlConnection.getMysqlConnection();
+        Connection connection = MysqlConnectionUtils.getMysqlConnection();
         String query = "INSERT INTO cach_ly (id_cachly, tgian_bat_dau , muc_do_cach_ly, noi_cach_ly, is_tested, id_nhankhau)"
                 + "values (?, ?, ?, ?, ?, ?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);

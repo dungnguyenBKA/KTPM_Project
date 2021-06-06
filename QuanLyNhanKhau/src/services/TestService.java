@@ -30,7 +30,7 @@ public class TestService {
             System.out.println(e.getMessage());
         }
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
@@ -56,7 +56,7 @@ public class TestService {
         List<TestBean> list = new ArrayList<>();
 
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM test t JOIN nhan_khau nk ON t.id_nhankhau = nk.ID ";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();

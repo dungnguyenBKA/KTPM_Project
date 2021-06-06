@@ -1,12 +1,11 @@
 package controllers.NhanKhauManagerController;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import models.KhaiTuModel;
-import services.MysqlConnection;
+import services.MysqlConnectionUtils;
 
 /**
  *
@@ -15,7 +14,7 @@ import services.MysqlConnection;
 public class KhaiTuController {
     public int checkCMT(String cmt) {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "SELECT * FROM nhan_khau LEFT JOIN chung_minh_thu ON nhan_khau.ID = chung_minh_thu.idNhanKhau WHERE soCMT = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, cmt);
@@ -31,7 +30,7 @@ public class KhaiTuController {
     
     public boolean addNew(KhaiTuModel khaiTuModel) {
         try {
-            Connection connection = MysqlConnection.getMysqlConnection();
+            Connection connection = MysqlConnectionUtils.getMysqlConnection();
             String query = "INSERT INTO khai_tu(idNhanKhau, , lyDo)" + " value (?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
 //            preparedStatement.setInt(1, tamTruModel.getIdNhanKhau());

@@ -521,10 +521,8 @@ public class ThemMoiKhaiBao extends javax.swing.JFrame {
     // check cac gia tri duoc nhap vao form
     private boolean validateValueInForm() {
         // check null
-        if (jTextField1.getText().trim().isEmpty()
-                || jTextField3.getText().trim().isEmpty()
-                || jTextField4.getText().trim().isEmpty()
-                || jTextField5.getText().trim().isEmpty()) {
+        if (jTextField7.getText().trim().isEmpty()
+                || jTextField8.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(rootPane, "Vui lòng nhập hết các trường bắt buộc", "Warning", JOptionPane.WARNING_MESSAGE);
             return false;
         }
@@ -532,15 +530,19 @@ public class ThemMoiKhaiBao extends javax.swing.JFrame {
     }
 
     public java.sql.Date convertUtilToSql(java.util.Date uDate) {
-        java.sql.Date sDate = new java.sql.Date(uDate.getTime());
-        return sDate;
+        return new Date(uDate.getTime());
     }
 
     public void setDataTextField(KhaiBaoBean khaiBaoBean) {
         KhaiBaoService khaiBaoService = new KhaiBaoService();
         this.jTextField1.setText(khaiBaoBean.getNhanKhauModel().getHoTen());
         this.jTextField1.setEnabled(false);
-        jTextField3.setText(khaiBaoBean.getNhanKhauModel().getNamSinh().toString());
+        try {
+            jTextField3.setText(khaiBaoBean.getNhanKhauModel().getNamSinh().toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+            jTextField3.setText("NO DATA");
+        }
         jTextField3.setEnabled(false);
 
         String maNhanKhau = khaiBaoService.getMaNhanKhau(khaiBaoBean.getNhanKhauModel().getHoTen(), khaiBaoBean.getNhanKhauModel().getNamSinh().toString());
